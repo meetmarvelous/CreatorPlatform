@@ -22,8 +22,8 @@ export default function Home() {
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 max-w-5xl animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100 ease-out fill-mode-both leading-[1.1]">
-          Own your audience. <br className="hidden md:block"/>
-          <span className="text-gradient drop-shadow-sm">Keep 100% of your earnings.</span>
+          Own your audience. <br />
+          <span className="text-gradient drop-shadow-sm">Build a world your fans truly belong to.</span>
         </h1>
         
         <p className="text-lg md:text-2xl text-slate-600 max-w-3xl mb-10 text-balance animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200 ease-out fill-mode-both font-medium">
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="w-full py-12 border-y border-border/50 bg-white/40 backdrop-blur-sm z-10">
         <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-border/50">
           <div className="flex flex-col items-center justify-center p-2">
-            <p className="text-4xl font-bold text-indigo-900 mb-1">$0</p>
+            <p className="text-4xl font-bold text-indigo-900 mb-1">Minimal</p>
             <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">Platform Fees</p>
           </div>
           <div className="flex flex-col items-center justify-center p-2">
@@ -61,7 +61,7 @@ export default function Home() {
             <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">Creators</p>
           </div>
           <div className="flex flex-col items-center justify-center p-2">
-            <p className="text-4xl font-bold text-indigo-900 mb-1">100%</p>
+            <p className="text-4xl font-bold text-indigo-900 mb-1">Direct</p>
             <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">Ownership</p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
               <CardTitle className="mb-3 text-2xl">Zero Platform Fees</CardTitle>
               <CardDescription className="text-base text-slate-600 leading-relaxed">
-                Why pay 10-20% when you can pay nothing? You keep exactly what your subscribers pay. We make money by providing optional premium tools, not by taxing your connection to fans.
+                Why pay 10-20% when you can pay significantly less? You keep nearly everything your subscribers pay. We make money by providing optional premium tools, not by taxing your connection to fans.
               </CardDescription>
             </Card>
           </div>
@@ -217,8 +217,8 @@ export default function Home() {
                 a: "No! We've integrated seamless fiat on-ramps. Your fans can pay with a standard credit card, and the system handles the crypto conversion automatically."
               },
               {
-                q: "How does the 'zero fees' model work?",
-                a: "You keep 100% of the subscription revenue. Traditional platforms charge 10-20% because they manage risk and banking infrastructure. Since crypto is peer-to-peer, those costs disappear."
+                q: "How does the low-fee model work?",
+                a: "You keep nearly all of the subscription revenue. Traditional platforms charge 10-20% for risk management and banking infrastructure. Since crypto is peer-to-peer, many of those costs vanish, allowing us to offer the highest payouts in the industry."
               },
               {
                 q: "When do I get paid?",

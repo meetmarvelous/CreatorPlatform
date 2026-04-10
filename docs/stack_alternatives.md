@@ -150,7 +150,7 @@ Both are completely free and open-source. No changes needed.
 | **Onboarding UX** | Seamless — fan signs up with email, wallet is invisible | Fan needs to connect a wallet separately for payments |
 | **Complexity** | One integration | Two integrations (auth + wallet) |
 | **Cost** | High at scale | Free |
-| **Control** | Vendor lock-in | Full ownership |
+| **Control** | Vendor lock-in | Direct ownership |
 | **Wallet custody** | Privy holds keys | User holds keys (more decentralized) |
 
 The trade-off is **slightly more friction** during the wallet-connect step for fans, but you gain **full control, zero vendor lock-in, and save $500+/month** at scale. For most users in 2026, connecting a wallet (especially via Coinbase Wallet or MetaMask mobile) is a 10-second process.

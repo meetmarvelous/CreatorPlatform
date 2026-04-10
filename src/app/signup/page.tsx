@@ -23,7 +23,7 @@ export default function SignupPage() {
 
         <div className="relative z-10 max-w-lg mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <h2 className="text-4xl font-bold tracking-tight mb-4 leading-tight">
-            Start keeping <span className="text-purple-400">100%</span> of what you earn.
+            Start keeping <span className="text-purple-400">nearly all</span> of what you earn.
           </h2>
           <p className="text-lg text-purple-100/80 mb-8">
             Set up your profile, define your tiers, and start accepting crypto subscriptions instantly without arbitrary wait times and platform fees.
