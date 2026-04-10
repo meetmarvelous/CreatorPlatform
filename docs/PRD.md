@@ -8,7 +8,7 @@ The product is a web platform that allows content creators to publish exclusive 
 
 Fans can subscribe to their favorite creators and gain access to exclusive posts, videos, files, and live sessions.
 
-The goal is to build a platform where creators can monetize their audience directly without relying on advertising revenue.
+The goal is to build a platform where creators can monetize their audience directly, keeping nearly all of what they earn without relying on advertising revenue or high platform taxes.
 
 ---
 
@@ -180,12 +180,7 @@ The platform must support secure payments.
 
 • Crypto payments
 
-### Revenue Model
-
-Platform takes a percentage from creator earnings.
-
-Example:
-• Platform fee: 10 to 20 percent.
+Platform takes a minimal percentage from creator earnings to cover network costs and operational stability, ensuring creators maximize their take-home pay compared to traditional 20%+ platform fees.
 
 ---
 
@@ -263,19 +258,16 @@ Authentication:
 
 ---
 
-# 11. MVP Scope
+The current version (MVP) fully implements:
 
-The first version should include:
-
-• User registration
-• Creator profiles
-• Content posting
-• Subscriptions
-• Payments
-• Basic messaging
-• Admin panel
-
-Advanced features can come later.
+• User registration & Secure Auth
+• Creator profiles with customizable Shop/Digital Store
+• Content posting (Videos, Images, Audio, Gated)
+• Subscriptions & Tipping loops
+• Global Discovery/Explore system
+• Direct Messaging (Fan-Creator)
+• Wallet management & Withdrawal Dashboard
+• Internal Admin control panel
 
 ---
 

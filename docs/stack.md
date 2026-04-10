@@ -38,11 +38,14 @@ To build an effective and scalable MVP for your creator subscription platform in
 | Component         | Technology               | Role in MVP                         |
 | ----------------- | ------------------------ | ----------------------------------- |
 | **Frontend**      | Next.js + Tailwind       | Creator Pages & Dashboard           |
+| **Discovery**     | Explore Feed             | Cross-platform creator discovery    |
+| **Marketplace**   | Digital Store / Shop     | Direct item purchases (no sub req)  |
 | **Auth**          | Supabase Auth            | Email, OAuth, Magic Links — Free    |
 | **Wallet**        | wagmi + RainbowKit       | Crypto Wallet Connection — Free     |
 | **Payments**      | Unlock Protocol          | Crypto Subscriptions & Tips         |
 | **Database**      | Supabase (PostgreSQL)    | User Data & Metadata                |
 | **Media Storage** | Cloudflare R2            | Videos, Images — Zero Egress Fees   |
+| **Admin Control** | Admin Panel              | Global user & transaction oversight |
 | **Network**       | Base (L2)                | Fast, Low-Cost Transactions         |
 
 ### Why This Stack is Conclusive
