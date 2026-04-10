@@ -1,13 +1,13 @@
 "use client"
 
-import { Card, CardContent } from "@/components/ui/Card"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import { Search, Mail, Send, Paperclip, MoreHorizontal, User, Smartphone, Wallet, Info } from "lucide-react"
+import { Search, Send, Paperclip, MoreHorizontal, Smartphone, Wallet, Info, ChevronLeft } from "lucide-react"
 import { useState } from "react"
 
 export default function MessagesPage() {
   const [activeChat, setActiveChat] = useState(0);
+  const [showChatMobile, setShowChatMobile] = useState(false);
 
   const contacts = [
     { id: 0, name: "Sarah Michaels", avatar: "SM", status: "online", lastMsg: "The new studio looks amazing!", time: "2m", unread: 2 },
@@ -25,10 +25,15 @@ export default function MessagesPage() {
     { id: 5, sender: "Sarah Michaels", text: "The new studio looks amazing!", time: "10:19 AM", isMe: false },
   ]
 
+  const handleSelectContact = (id: number) => {
+    setActiveChat(id);
+    setShowChatMobile(true);
+  }
+
   return (
     <div className="flex h-[calc(100vh-64px)] overflow-hidden bg-slate-50/50">
       {/* Search & Contacts Sidebar */}
-      <div className="w-full md:w-80 lg:w-96 border-r bg-white flex flex-col shrink-0">
+      <div className={`w-full md:w-80 lg:w-96 border-r bg-white flex flex-col shrink-0 ${showChatMobile ? 'hidden md:flex' : 'flex'}`}>
         <div className="p-6 border-b">
           <h2 className="text-2xl font-bold text-slate-900 mb-4 font-display">Messages</h2>
           <div className="relative">
@@ -40,7 +45,7 @@ export default function MessagesPage() {
           {contacts.map((contact) => (
             <div 
               key={contact.id} 
-              onClick={() => setActiveChat(contact.id)}
+              onClick={() => handleSelectContact(contact.id)}
               className={`p-4 flex items-start gap-3 cursor-pointer transition-colors ${activeChat === contact.id ? 'bg-indigo-50/50' : 'hover:bg-slate-50'}`}
             >
               <div className="relative shrink-0">
@@ -75,10 +80,16 @@ export default function MessagesPage() {
       </div>
 
       {/* Main Chat Interface */}
-      <div className="flex-1 flex flex-col relative bg-white md:bg-transparent">
+      <div className={`flex-1 flex flex-col relative bg-white md:bg-transparent ${showChatMobile ? 'flex' : 'hidden md:flex'}`}>
         {/* Chat Header */}
-        <div className="h-16 border-b md:border-t-0 px-6 bg-white flex items-center justify-between sticky top-0 z-20">
+        <div className="h-16 border-b md:border-t-0 px-4 md:px-6 bg-white flex items-center justify-between sticky top-0 z-20">
           <div className="flex items-center gap-3">
+             <button 
+               onClick={() => setShowChatMobile(false)}
+               className="md:hidden p-2 -ml-2 text-slate-400 hover:text-indigo-600"
+             >
+                <ChevronLeft className="w-6 h-6" />
+             </button>
              <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-white font-bold text-sm">
                 {contacts[activeChat].avatar}
              </div>
@@ -103,14 +114,14 @@ export default function MessagesPage() {
         </div>
 
         {/* Messages Body */}
-        <div className="flex-1 overflow-auto p-6 space-y-4 bg-grid-pattern bg-[size:40px_40px] [mask-image:linear-gradient(to_bottom,white,transparent)]">
+        <div className="flex-1 overflow-auto p-4 md:p-6 space-y-4 bg-grid-pattern bg-[size:40px_40px] [mask-image:linear-gradient(to_bottom,white,transparent)]">
            <div className="flex justify-center mb-8">
               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 bg-slate-100 px-3 py-1 rounded-full">Today</span>
            </div>
            
            {messages.map((msg) => (
              <div key={msg.id} className={`flex ${msg.isMe ? 'justify-end' : 'justify-start'} group animate-in fade-in slide-in-from-bottom-2`}>
-                <div className={`max-w-[80%] md:max-w-[60%] flex flex-col ${msg.isMe ? 'items-end' : 'items-start'}`}>
+                <div className={`max-w-[85%] md:max-w-[60%] flex flex-col ${msg.isMe ? 'items-end' : 'items-start'}`}>
                    {!msg.isMe && <span className="text-[10px] font-bold text-slate-400 mb-1 ml-1">{msg.sender}</span>}
                    <div className={`px-4 py-3 rounded-2xl shadow-sm text-sm ${
                      msg.isMe 
@@ -160,3 +171,4 @@ export default function MessagesPage() {
     </div>
   )
 }
+

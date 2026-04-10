@@ -1,9 +1,8 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/Card"
 import { Button } from "@/components/ui/Button"
-import { Search, Wallet, ArrowUpRight, ArrowDownLeft, Filter, History, DollarSign, ExternalLink, ShieldCheck, CreditCard, ChevronRight } from "lucide-react"
-import { useState } from "react"
+import { Wallet, ArrowUpRight, ArrowDownLeft, Filter, History, ExternalLink, ShieldCheck, CreditCard, ChevronRight } from "lucide-react"
 
 export default function WalletPage() {
   const transactions = [
@@ -24,23 +23,23 @@ export default function WalletPage() {
               Manage your earnings, view history, and withdraw to your crypto wallet.
             </p>
           </div>
-          <Button className="rounded-full shadow-lg shadow-indigo-500/20 bg-indigo-600 hover:bg-indigo-700 h-12 px-6">
+          <Button className="rounded-full shadow-lg shadow-indigo-500/20 bg-indigo-600 hover:bg-indigo-700 h-10 md:h-12 px-5 md:px-8 text-sm md:text-base">
             Add Funds
           </Button>
         </div>
 
         {/* Balance Overview */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-           <Card className="glass-card bg-indigo-600 text-white border-0 shadow-2xl shadow-indigo-500/30 overflow-hidden relative group">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none"></div>
+           <Card className="glass-card bg-slate-900 text-white border-0 shadow-2xl shadow-slate-900/20 overflow-hidden relative group">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-600/30 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none"></div>
               <CardHeader className="pb-4 relative z-10">
                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-indigo-100 text-sm font-bold uppercase tracking-widest">Available Balance</CardTitle>
-                    <Wallet className="h-5 w-5 text-indigo-300" />
+                    <CardTitle className="text-slate-400 text-xs font-black uppercase tracking-widest">Available Balance</CardTitle>
+                    <Wallet className="h-5 w-5 text-indigo-400" />
                  </div>
               </CardHeader>
               <CardContent className="relative z-10">
-                 <div className="text-5xl font-black mb-6 tracking-tighter">$14,250.00</div>
+                 <div className="text-4xl md:text-5xl font-black mb-6 tracking-tighter text-white">$14,250.00</div>
                  <div className="flex gap-4">
                     <Button className="bg-white text-indigo-600 hover:bg-indigo-50 font-bold px-6 h-12 rounded-xl flex-1">
                        Withdraw

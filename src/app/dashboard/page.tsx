@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card"
 import { Button } from "@/components/ui/Button"
-import { ArrowUpRight, Link as LinkIcon, Users, Wallet, Activity, CreditCard, ChevronRight, TrendingUp, Sparkles, Target } from "lucide-react"
+import { ArrowUpRight, Users, Wallet, Activity, CreditCard, ChevronRight, TrendingUp, Sparkles, Target } from "lucide-react"
 import Link from "next/link"
 
 export default function DashboardPage() {
@@ -13,7 +13,7 @@ export default function DashboardPage() {
           <div>
             <h2 className="text-4xl font-bold tracking-tight text-slate-900">Dashboard</h2>
             <p className="text-slate-500 mt-2 text-lg">
-              Welcome back, Creative Artist! Here's what's happening today.
+              Welcome back, Creative Artist! Here&apos;s what&apos;s happening today.
             </p>
           </div>
           <div className="flex items-center space-x-4">

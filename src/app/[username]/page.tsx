@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/Button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/Card"
-import { Image as ImageIcon, Video, Heart, Share2, MessageCircle, Lock, Star, ShieldCheck, Mail, MapPin, Link as LinkIcon, CheckCircle2, CreditCard } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card"
+import { Video, Heart, Share2, MessageCircle, Lock, Star, ShieldCheck, MapPin, Link as LinkIcon, CheckCircle2, CreditCard } from "lucide-react"
 import Link from "next/link"
 
 export default function CreatorProfilePage({ params }: { params: { username: string } }) {

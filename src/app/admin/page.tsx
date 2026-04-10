@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import { Users, Shield, BarChart3, AlertCircle, DollarSign, ArrowUpRight, CheckCircle2, XCircle, Search, Filter } from "lucide-react"
+import { Users, Shield, BarChart3, AlertCircle, DollarSign, CheckCircle2, Search } from "lucide-react"
 
 export default function AdminPage() {
   const stats = [

@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/Card"
 import { Sparkles, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
@@ -29,7 +28,7 @@ export default function SignupPage() {
             Set up your profile, define your tiers, and start accepting crypto subscriptions instantly without arbitrary wait times and platform fees.
           </p>
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-            <p className="italic text-slate-200 mb-4 text-sm">"The onboarding was shockingly easy. My non-crypto fans pay with card, and I receive stablecoins in my wallet. Perfect."</p>
+            <p className="italic text-slate-200 mb-4 text-sm">&quot;The onboarding was shockingly easy. My non-crypto fans pay with card, and I receive stablecoins in my wallet. Perfect.&quot;</p>
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-purple-400 to-indigo-400"></div>
               <div>

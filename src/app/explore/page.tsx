@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/Button"
 import { Card, CardContent } from "@/components/ui/Card"
 import { Input } from "@/components/ui/Input"
-import { Search, MapPin, Users, Heart, Star, Flame, Sparkles, Filter } from "lucide-react"
+import { Search, Users, Heart, Flame, Sparkles } from "lucide-react"
 import Link from "next/link"
 
 export default function ExplorePage() {
@@ -31,15 +31,15 @@ export default function ExplorePage() {
           <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6 text-slate-900">Discover your next <span className="text-indigo-600">obsession.</span></h1>
           <p className="text-slate-500 text-lg mb-10 max-w-2xl mx-auto">Browse thousands of world-class creators and join their private communities.</p>
           
-          <div className="max-w-2xl mx-auto relative flex items-center gap-2">
-            <div className="relative flex-1">
+          <div className="max-w-2xl mx-auto relative flex flex-col md:flex-row items-center gap-3">
+            <div className="relative w-full">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
               <Input 
                 placeholder="Search creators by name, niche, or keyword..." 
-                className="pl-12 h-14 bg-white border-slate-200 rounded-2xl shadow-sm focus:ring-indigo-500"
+                className="pl-12 h-14 bg-white border-slate-200 rounded-2xl shadow-sm focus:ring-indigo-500 w-full"
               />
             </div>
-            <Button className="h-14 px-8 rounded-2xl bg-indigo-600 hover:bg-indigo-700 shadow-xl shadow-indigo-500/20">
+            <Button className="h-14 w-full md:w-auto px-10 rounded-2xl bg-indigo-600 hover:bg-indigo-700 shadow-xl shadow-indigo-500/20 font-bold shrink-0">
               Search
             </Button>
           </div>

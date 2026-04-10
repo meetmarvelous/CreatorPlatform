@@ -6,17 +6,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Search, Mail, Filter, Download, UserPlus, TrendingUp, Medal, Star, Activity } from "lucide-react"
 
 export default function FansPage() {
-  const fans = Array.from({ length: 12 }).map((_, i) => {
-    const isPremium = Math.random() > 0.6;
-    return {
-      id: i,
-      address: `0x${Math.random().toString(16).substring(2, 8)}...${Math.random().toString(16).substring(2, 6)}`,
-      joined: `${Math.floor(Math.random() * 30) + 1} days ago`,
-      tier: isPremium ? "Premium ($10/mo)" : "Standard ($5/mo)",
-      spent: `$${(Math.random() * 500).toFixed(2)}`,
-      badge: isPremium && Math.random() > 0.5 ? "Top Fan" : null
-    }
-  });
+  const fans = [
+    { id: 1, address: "0x742d...44e", joined: "2 days ago", tier: "Premium ($10/mo)", spent: "$120.50", badge: "Top Fan" },
+    { id: 2, address: "0x8912...33b", joined: "5 days ago", tier: "Standard ($5/mo)", spent: "$45.00", badge: null },
+    { id: 3, address: "0x4a2c...99a", joined: "7 days ago", tier: "Premium ($10/mo)", spent: "$210.00", badge: "Top Fan" },
+    { id: 4, address: "0x123f...bc4", joined: "10 days ago", tier: "Standard ($5/mo)", spent: "$15.00", badge: null },
+    { id: 5, address: "0x987e...dd1", joined: "12 days ago", tier: "Premium ($10/mo)", spent: "$89.99", badge: null },
+    { id: 6, address: "0xcf12...ee9", joined: "14 days ago", tier: "Standard ($5/mo)", spent: "$32.50", badge: null },
+    { id: 7, address: "0xab45...22c", joined: "18 days ago", tier: "Premium ($10/mo)", spent: "$150.00", badge: "Top Fan" },
+    { id: 8, address: "0xde78...11a", joined: "20 days ago", tier: "Standard ($5/mo)", spent: "$5.00", badge: null },
+    { id: 9, address: "0xf012...88b", joined: "22 days ago", tier: "Premium ($10/mo)", spent: "$300.00", badge: "Top Fan" },
+    { id: 10, address: "0x234d...77e", joined: "25 days ago", tier: "Standard ($5/mo)", spent: "$25.00", badge: null },
+    { id: 11, address: "0x567b...aa0", joined: "28 days ago", tier: "Premium ($10/mo)", spent: "$400.00", badge: "Top Fan" },
+    { id: 12, address: "0x890c...bb1", joined: "30 days ago", tier: "Standard ($5/mo)", spent: "$60.00", badge: null },
+  ];
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50/50">

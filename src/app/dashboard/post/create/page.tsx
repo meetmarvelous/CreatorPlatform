@@ -2,8 +2,8 @@
 
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/Card"
-import { ArrowLeft, Image as ImageIcon, Video, FileText, Lock, Globe, Mic, BarChart, X, ChevronRight } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card"
+import { ArrowLeft, Image as ImageIcon, Video, Mic, BarChart, Lock, Globe, ChevronRight } from "lucide-react"
 import Link from "next/link"
 
 export default function CreatePostPage() {

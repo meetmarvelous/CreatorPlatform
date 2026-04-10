@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/Card"
-import { Settings, User, Wallet, Bell, Link as LinkIcon, Save, Heart, ShieldCheck, MailPlus } from "lucide-react"
+import { Settings, User, Wallet, Bell, Link as LinkIcon, Save, ShieldCheck, MailPlus } from "lucide-react"
 
 export default function SettingsPage() {
   return (

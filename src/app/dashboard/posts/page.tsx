@@ -1,9 +1,9 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card"
+import { Card, CardContent, CardHeader } from "@/components/ui/Card"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import { Search, Filter, MoreVertical, Eye, MessageCircle, Heart, DollarSign, ExternalLink, Edit3, Trash2, TrendingUp } from "lucide-react"
+import { Search, Filter, MoreVertical, Heart, DollarSign, Edit3, Trash2, TrendingUp } from "lucide-react"
 import Link from "next/link"
 
 export default function PostsPage() {

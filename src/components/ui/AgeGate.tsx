@@ -5,21 +5,20 @@ import { Button } from "./Button"
 import { Shield, Lock, AlertTriangle } from "lucide-react"
 
 export function AgeGate() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const [hasVerified, setHasVerified] = useState(true)
 
   useEffect(() => {
-    const hasVerified = localStorage.getItem("age-verified")
-    if (!hasVerified) {
-      setIsVisible(true)
-    }
+    setMounted(true)
+    setHasVerified(!!localStorage.getItem("age-verified"))
   }, [])
 
   const handleVerify = () => {
     localStorage.setItem("age-verified", "true")
-    setIsVisible(false)
+    setHasVerified(true)
   }
 
-  if (!isVisible) return null
+  if (!mounted || hasVerified) return null
 
   return (
     <div className="fixed inset-0 z-[9999] bg-slate-900/95 backdrop-blur-xl flex items-center justify-center p-6 text-white text-center">

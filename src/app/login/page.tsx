@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/Card"
 import { Sparkles, ArrowRight } from "lucide-react"
 import Link from "next/link"
 

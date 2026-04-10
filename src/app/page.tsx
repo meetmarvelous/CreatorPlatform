@@ -118,7 +118,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-slate-900">Start monetizing in 3 simple steps</h2>
               <p className="text-lg text-slate-600 mb-8 text-balance">
-                We've abstracted away all the complex web3 onboarding. Your fans can pay with crypto, or simply use their credit card to purchase an on-ramp seamlessly under the hood.
+                We&apos;ve abstracted away all the complex web3 onboarding. Your fans can pay with crypto, or simply use their credit card to purchase an on-ramp seamlessly under the hood.
               </p>
               
               <div className="space-y-8">
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold leading-tight text-slate-900">
-            "Switching to CreatorPlatform was the best decision for my business. I instantly gained 15% more revenue just from avoiding the traditional platform fees."
+            &quot;Switching to CreatorPlatform was the best decision for my business. I instantly gained 15% more revenue just from avoiding the traditional platform fees.&quot;
           </h2>
           <div className="flex flex-col items-center gap-4 mt-8">
             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 p-1">
@@ -204,6 +204,70 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Pricing & Transparency Section */}
+      <section id="pricing" className="w-full py-24 bg-indigo-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.05] -z-10"></div>
+        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Transparency is our <span className="text-indigo-400">Competitive Edge</span></h2>
+            <p className="text-indigo-100 max-w-2xl text-xl mx-auto">
+              We&apos;ve replaced the traditional 20% &quot;Platform Tax&quot; with a minimal 5% network fee. You keep nearly everything you earn.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Traditional Card */}
+            <Card className="bg-white/5 border-white/10 backdrop-blur-md p-8 md:p-12 rounded-3xl opacity-60">
+              <h3 className="text-2xl font-bold mb-8 text-slate-300">Traditional Platforms</h3>
+              <div className="space-y-6">
+                 {[
+                   { label: "Platform Fee", value: "20% - 30%", color: "text-red-400" },
+                   { label: "Payout Schedule", value: "30-45 Day Delay", color: "text-indigo-100" },
+                   { label: "Ownership", value: "Limited Platform Control", color: "text-indigo-100" },
+                   { label: "Audience Access", value: "Algorithms Decide Reach", color: "text-indigo-100" },
+                 ].map((row, i) => (
+                   <div key={i} className="flex justify-between items-center border-b border-white/10 pb-4">
+                      <span className="text-indigo-200">{row.label}</span>
+                      <span className={`font-bold ${row.color}`}>{row.value}</span>
+                   </div>
+                 ))}
+              </div>
+            </Card>
+
+            {/* Our Card */}
+            <Card className="bg-white border-0 p-8 md:p-12 rounded-3xl shadow-2xl shadow-indigo-500/40 relative">
+               <div className="absolute -top-4 -right-4 bg-indigo-600 text-white px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-xl">Best for Creators</div>
+               <h3 className="text-3xl font-black mb-8 text-slate-900 flex items-center gap-3">
+                  <Sparkles className="w-6 h-6 text-indigo-600" />
+                  CreatorPlatform
+               </h3>
+               <div className="space-y-6">
+                 {[
+                   { label: "Platform Fee", value: "5% flat fee", icon: CheckCircle2, valueStyles: "text-emerald-600 font-black text-2xl" },
+                   { label: "Payout Schedule", value: "Instant Settlement", icon: CheckCircle2, valueStyles: "text-slate-900 font-bold" },
+                   { label: "Ownership", value: "100% Total Ownership", icon: CheckCircle2, valueStyles: "text-slate-900 font-bold" },
+                   { label: "Audience Access", value: "Direct & Independent", icon: CheckCircle2, valueStyles: "text-slate-900 font-bold" },
+                 ].map((row, i) => (
+                   <div key={i} className="flex justify-between items-center border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+                      <div className="flex items-center gap-2">
+                         <row.icon className="w-5 h-5 text-emerald-500" />
+                         <span className="text-slate-500">{row.label}</span>
+                      </div>
+                      <span className={row.valueStyles}>{row.value}</span>
+                   </div>
+                 ))}
+               </div>
+               <div className="mt-12 bg-indigo-50 p-6 rounded-2xl text-left">
+                  <p className="text-indigo-900 font-bold text-lg mb-2">Sustainable & Scaleable</p>
+                  <p className="text-indigo-600/70 text-sm leading-relaxed">
+                    By leveraging peer-to-peer crypto networks, we eliminate the need for thousands of middleman banks and risk managers. This allows us to run on just 5% while giving you everything else.
+                  </p>
+               </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="w-full py-24 border-t border-border/50 bg-white/40">
         <div className="max-w-3xl mx-auto px-4 md:px-6">
